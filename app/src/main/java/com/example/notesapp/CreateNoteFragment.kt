@@ -51,10 +51,10 @@ class CreateNoteFragment : BaseFragment(){
             saveNote()
 
         }
-        imgBack.setOnClickListener {
-            replaceFragment(HomeFragment.newInstance(), false)
-        }
 
+        imgBack.setOnClickListener {
+            replaceFragment(HomeFragment.newInstance(),false)
+        }
     }
 
 
@@ -76,6 +76,7 @@ class CreateNoteFragment : BaseFragment(){
             notes.noteText = etNoteDesc.text.toString()
             notes.dateTime = currentDate
             context?.let {
+
                 NotesDatabase.getDatabase(it).noteDao().insertNotes(notes)
                 etNoteTitle.setText("")
                 etNoteSubTitle.setText("")
@@ -88,9 +89,9 @@ class CreateNoteFragment : BaseFragment(){
     fun replaceFragment(fragment:Fragment, transition:Boolean) {
         val fragmentTransition = requireActivity()!!.supportFragmentManager.beginTransaction()
 
-        if(transition){
-            fragmentTransition.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left)
-        }
+//        if(transition){
+//            fragmentTransition.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left)
+//        }
         fragmentTransition.replace(R.id.frame_layout,fragment).addToBackStack(fragment.javaClass.simpleName).commit()
 
     }

@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#292929</color>
     <color name="colorAccent">#C9945E</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorText">#7183A8</color>
     <color name="colorGray">#CACACA</color>
     <color name="colorSearchIcon">#DBDBDB</color>
     <color name="colorTextHint">#7B7B7B</color>
@@ -22,5 +23,6 @@
     <color name="colorDarkGrey">#495274</color>
     <color name="colorDelete">#C9945E</color>
     <color name="colorSearchBackground">#333333</color>
+
 
 </resources>

@@ -21,22 +21,22 @@
         />
 
 
+
         <SearchView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
             android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp"
             app:layout_constraintTop_toBottomOf="@id/textMyNotes"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:searchIcon="@drawable/ic_search"
             android:background="@drawable/background"
             android:queryHint="@string/search"
             android:theme="@style/ThemeOverlay.search"
             android:iconifiedByDefault="false"
-            android:id="@+id/search_view" />
+            android:id="@+id/search_view"/>
 
 
     <androidx.recyclerview.widget.RecyclerView

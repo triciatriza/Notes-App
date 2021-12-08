@@ -8,7 +8,7 @@ import com.example.notesapp.dao.NoteDao
 import com.example.notesapp.entities.Notes
 import java.security.AccessControlContext
 
-@Database(entities = [Notes::class], version = 1, exportSchema = false)
+@Database(entities = [Notes::class], version = 4, exportSchema = false)
 abstract class NotesDatabase: RoomDatabase() {
 
     companion object{

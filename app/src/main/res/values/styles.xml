@@ -6,4 +6,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="ThemeOverlay.search" parent="AppTheme">
+
+        <!-- Text color -->
+        <item name="android:editTextColor">@color/colorPrimary</item>
+        <!-- Hint text color -->
+        <item name="android:textColorHint">@color/colorDarkGrey</item>
+
+    </style>
 </resources>
